@@ -53,6 +53,6 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
      Your current time is: <?php echo $clock; ?>.
     </p>
 
-	<img src="<? echo $image; ?>" alt='Status'>
+	<img src="<?php echo $image; ?>" alt='Status'>
 </body>
 </html>
