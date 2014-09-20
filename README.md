@@ -7,7 +7,7 @@ GIT NOTES:
 
   # git init 
   
-  # git remote add <hello-world> git@github.com:flavio-pereira/hello-world.git
+  # git remote add hello-world git@github.com:flavio-pereira/hello-world.git
   
   # git status
   
@@ -15,4 +15,4 @@ GIT NOTES:
   
   # git commit -m "comment that you want" 
   
-  # git push -u <hello-world> master
+  # git push -u hello-world master
