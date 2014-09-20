@@ -12,7 +12,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 
     <?php    
 
-		date_default_timezone_set('Australia/Melbourne');
+		date_default_timezone_set('America/Denver');
 
 		$clock = date('h:i A');
 
