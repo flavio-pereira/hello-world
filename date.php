@@ -9,6 +9,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 
     <meta charset='utf-8'>
     <title>Time Zone</title>
+    <link rel='stylesheet' href='style.css' type='text/css'>
 
     <?php    
 
@@ -24,22 +25,26 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 		$afternoon_start = '11';
 		$afternoon_end = '16';
 
-		$eveening_start = '16';
-		$eveening_end = '20';
+		$evening_start = '16';
+		$evening_end = '20';
 
 		if ($current_time >= $morning_start AND $current_time < $morning_end){
 
 				$image = 'http://making-the-internet.s3.amazonaws.com/php-morning.png';
+				$backgrd = 'morning';
 			}
 			elseif ($current_time >= $afternoon_start AND $current_time < $afternoon_end) {
 	 	
 			 	$image = 'http://making-the-internet.s3.amazonaws.com/php-afternoon.png';
+			 	$backgrd = 'afternoon';
 	 		}
-	 		elseif ($current_time >= $eveening_start AND $current_time < $eveening_end) {
+	 		elseif ($current_time >= $evening_start AND $current_time < $evening_end) {
 				$image = 'http://making-the-internet.s3.amazonaws.com/php-evening.png';
+				$backgrd = 'evening';
 	  		} 
 	 		else {
 	 			$image = 'http://making-the-internet.s3.amazonaws.com/php-night.png';
+	 			$backgrd = 'night';
 
 			}
 
@@ -47,7 +52,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 
 </head>
 
-<body>
+<body class="<?php echo $backgrd?>" >
 
     <p>
      Your current time is: <?php echo $clock; ?>.
