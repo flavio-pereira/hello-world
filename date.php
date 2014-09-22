@@ -52,7 +52,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 
 </head>
 
-<body class="<?php echo $backgrd?>" >
+<body class="<?php echo $backgrd?>">
 
     <p>
      Your current time is: <?php echo $clock; ?>.
